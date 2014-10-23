@@ -102,6 +102,7 @@
       Parse.initialize("dkmj5nkZpZ7N1Po6Da6iEUJcpC3W71tAgi8srIa0", "EvjURA0vE1qjAoOJeg2OJKlXlZ3rQWqzNPyDqieD");
       var StoreLocation = Parse.Object.extend("StoreLocation");
       var query = new Parse.Query(StoreLocation);
+      query.limit(1000);
       query.find({
         success: function(storeLocations) {
           // The object was retrieved successfully.
